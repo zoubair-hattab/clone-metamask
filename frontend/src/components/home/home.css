@@ -1,0 +1,56 @@
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item {
+  cursor: pointer;
+}
+.amount {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+  margin-top: 10px;
+}
+.amount > span {
+  color: gray;
+}
+.account {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.status {
+  color: rgb(41, 233, 41);
+  font-size: 18px;
+  font-weight: 400;
+}
+.home-items {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-block: 20px 15px;
+}
+
+.box {
+  padding: 7px 9px;
+  text-align: center;
+  box-shadow: var(--shadow-4);
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.item-title {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #10aafe;
+}
+.activity {
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+}
+.activity .item {
+  font-size: 15px;
+  font-weight: 500;
+}

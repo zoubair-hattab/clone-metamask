@@ -1,0 +1,119 @@
+:root {
+  --prussian-blue: hsl(217, 33%, 17%);
+  --oxford-blue-2: rgb(15, 23, 41);
+  --oxford-blue: hsla(221, 33%, 15%, 1);
+  --blue-violet: hsla(262, 83%, 58%, 1);
+  --blue-violet_a5: hsla(262, 83%, 58%, 0.05);
+  --blue-violet_a10: hsla(262, 83%, 58%, 0.1);
+  --alice-blue: hsla(214, 32%, 91%, 1);
+  --alice-blue-2: hsla(215, 30%, 92%, 1);
+  --cultured: hsla(220, 14%, 96%, 1);
+  --gainsboro: hsla(220, 13%, 91%, 1);
+  --light-gray: hsla(216, 12%, 84%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --white_a10: hsla(0, 0%, 100%, 0.1);
+  --manatee: hsla(218, 11%, 65%, 1);
+  --green-cyan: rgb(5, 148, 103);
+  --cadet-grey: hsla(215, 20%, 65%, 1);
+  --electric-indigo: hsla(263, 70%, 50%, 1);
+  --maximum-red: hsla(0, 72%, 51%, 1);
+  --black: hsla(0, 0%, 0%, 1);
+  --gunmetal: hsla(215, 28%, 17%, 1);
+
+  --linear-gradient-1: linear-gradient(
+    to top left,
+    hsla(0, 72%, 51%, 0.4) 0%,
+    hsla(262, 83%, 58%, 0.4)
+  );
+  --linear-gradient-2: linear-gradient(
+    to right,
+    hsla(262, 83%, 58%, 1),
+    hsla(0, 72%, 51%, 1)
+  );
+
+  --ff-urbanist: 'Urbanist', sans-serif;
+
+  --headline-lg: 3.6rem;
+  --headline-md: 2.6rem;
+  --title-lg: 2rem;
+  --title-md: 1.8rem;
+  --title-sm: 1.7rem;
+  --body-lg: 2rem;
+  --body-md: 1.7rem;
+  --label-lg: 1.5rem;
+  --label-md: 1.4rem;
+
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+
+  --section-padding: 20px;
+
+  --shadow-1: 0 0 3px hsl(215, 28%, 17%);
+  --shadow-2: 0 5px 13px hsl(215, 28%, 17%);
+  --shadow-3: 0 5px 13px hsl(217, 19%, 27%);
+  --shadow-4: 0 0 3px hsl(217, 19%, 27%);
+  --shadow-5: 0 5px 13px hsla(214, 19%, 29%, 0.2);
+
+  --radius-circle: 50%;
+  --radius-pill: 100px;
+  --radius-12: 12px;
+  --radius-8: 8px;
+  --radius-6: 6px;
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+}
+
+/*-----------------------------------*\
+ * #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+body {
+  width: 22rem;
+}
+.card {
+  width: 100%;
+  padding-block: 10px;
+  height: 500px;
+  background-color: var(--oxford-blue-2);
+  color: var(--light-gray);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid var(--gunmetal);
+  box-shadow: var(--shadow-5);
+  transition: var(--transition-1);
+  border-radius: var(--radius-6);
+}
+
+.body-bg-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 600px;
+  background-image: var(--linear-gradient-1);
+  border-radius: var(--radius-circle);
+  filter: blur(200px);
+  z-index: -1;
+}
+.container {
+  padding-inline: 15px;
+}
+
+.section {
+  padding-block: var(--section-padding);
+}

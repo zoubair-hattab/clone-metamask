@@ -1,0 +1,60 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-block: 25px;
+}
+.title-send {
+  font-size: 25px;
+  font-weight: 600;
+}
+.input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 5px;
+  margin-block: 15px;
+  outline: none;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 5px;
+}
+.input:focus {
+  outline: none;
+}
+.btn {
+  background-image: var(--linear-gradient-2);
+  border-radius: var(--radius-pill);
+  color: var(--white);
+  font-weight: var(--fw-700);
+  border: none;
+  font-size: 16px;
+  min-width: -webkit-max-content;
+  min-width: max-content;
+  padding: 10px 16px;
+  width: 100%;
+}
+.image {
+  animation: myfirst 5s linear infinite;
+  display: block;
+}
+@keyframes myfirst {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.create-account {
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: blueviolet;
+}
